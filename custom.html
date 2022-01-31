@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <link href="$.CustomPath.$/thumb.png" type="image/png" rel="icon">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link href="$.CustomPath.$/css/custom.css" rel="stylesheet">
+
+    <title>Untangle WiFi Login</title>
+</head>
+
+<body>
+    <header>
+        <h1>DLSU-D Wi-fi Authentication Portal</h1><br>
+    </header>
+    <div class="modal" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-controls-modal="login-modal" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <p>Enter your username and password to connect to the internet.</p><br>
+            <div class="loginmodal-container">
+                <form autocomplete="off " method="post" action="/capture/handler.py/authpost ">
+                    <p>Username: &nbsp;<input name="username" id="username" style="width: 200px" type="text" autofocus>
+                    </p>
+                    <p>Password: &nbsp;<input name="password" id="password" style="width: 200px" type="password" autocomplete="off">
+                    </p>
+                    <input name="method" id="method" type="hidden" value="$.method.$">
+                    <input name="nonce" id="nonce" type="hidden" value="$.nonce.$">
+                    <input name="appid" id="appid" type="hidden" value="$.appid.$">
+                    <input name="host" id="host" type="hidden" value="$.host.$">
+                    <input name="uri" id="uri" type="hidden" value="$.uri.$">
+                    <input name="submit" id="submit" type="submit" value="Login" style="width: 150px; height: 40px">
+                </form>
+                <div class="login-help">
+                    <div style="color:red">$.ProblemText.$</div>
+                    This page is for authorized users only.
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-names">
+            <p>Made by Alcala, Camat, & Millan</p>
+            <p>for T-CPET312LA</p>
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>
